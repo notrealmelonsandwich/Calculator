@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/text_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_blue"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_result_label"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_vertical|right"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:columnCount="4"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_label">
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="7"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="8"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="9"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/orange"
+            android:onClick="inputOperand"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="4"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="5"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="6"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/orange"
+            android:onClick="inputOperand"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="1"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="2"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="3"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/orange"
+            android:onClick="inputOperand"
+            android:text="*"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/red"
+            android:onClick="clearAction"
+            android:text="AC"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/yellow"
+            android:onClick="inputNumber"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/orange"
+            android:onClick="resultAction"
+            android:text="="
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:background="@color/orange"
+            android:onClick="inputOperand"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
